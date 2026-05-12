@@ -17,9 +17,9 @@ export default function Hero() {
           <source src={bgback} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        
+
         {/* Overlay pour le contraste et le style "Premium" */}
-        <div className="absolute inset-0 bg-black/5 "></div>
+        <div className="absolute inset-0 bg-black/15 "></div>
       </div>
 
       {/* 2. Contenu Textuel (Design Awwwards Style) */}
