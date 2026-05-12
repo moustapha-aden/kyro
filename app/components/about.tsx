@@ -2,7 +2,7 @@ function AboutUs() {
   return (
     <section
       id="about"
-      className="relative  md:mx-10  text-black overflow-hidden"
+      className="relative mx-2 md:mx-10  text-black "
     >
       {/* Subtle noise / texture feel */}
       <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px]"></div>
@@ -12,24 +12,26 @@ function AboutUs() {
         {/* LEFT CONTENT */}
         <div>
        
+<div className="max-w-7xl">
+  <h2 className="mt-4 text-3xl mx-16 sm:text-4xl md:text-5xl lg:text-7xl font-extralight leading-[1.1] tracking-[-0.04em]">
+    Nous construisons
+    <span className="font-normal"> des infrastructures IT</span>{" "}
+    performantes.
+  </h2>
 
-          <h2 className="mt-6 text-4xl md:text-6xl lg:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
-  Nous construisons
-  <span className="font-normal">des infrastructures IT</span> performantes.
-</h2>
+  <div className="mt-6 md:mt-10 mx-16 space-y-5 md:space-y-6 text-black/70 text-base sm:text-lg leading-relaxed ">
+    <p>
+      Nous concevons et gérons des écosystèmes informatiques modernes incluant
+      les réseaux, la virtualisation et les infrastructures cloud sécurisées
+      pour les entreprises exigeantes en performance et en fiabilité.
+    </p>
 
-<div className="mt-10 space-y-6 text-black/70 text-lg leading-relaxed">
-  <p>
-    Nous concevons et gérons des écosystèmes informatiques modernes incluant
-    les réseaux, la virtualisation et les infrastructures cloud sécurisées pour
-    les entreprises exigeantes en performance et en fiabilité.
-  </p>
-
-  <p>
-    De l’architecture réseau à la reprise d’activité, nous garantissons la
-    continuité, la scalabilité et la sécurité à chaque niveau de votre système
-    d’information.
-  </p>
+    <p>
+      De l’architecture réseau à la reprise d’activité, nous garantissons la
+      continuité, la scalabilité et la sécurité à chaque niveau de votre
+      système d’information.
+    </p>
+  </div>
 </div>
 
     
