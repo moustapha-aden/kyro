@@ -18,7 +18,7 @@ export function meta() {
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white">
       <Navigation />
       <Hero />
       <Partenaire />
