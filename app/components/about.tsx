@@ -2,7 +2,7 @@ function AboutUs() {
   return (
     <section
       id="about"
-      className="relative  mx-10  text-black overflow-hidden"
+      className="relative  md:mx-10  text-black overflow-hidden"
     >
       {/* Subtle noise / texture feel */}
       <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px]"></div>
