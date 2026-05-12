@@ -11,7 +11,7 @@ function Partenaire() {
   ];
 
   return (
-    <div className="px-5 pt-8 pb-10">
+    <div className="px-5 text-black pt-8 pb-10">
          <div className="mb-10">
      <h2 className="text-center tracking-tighter text-xl leading-none"> Soutenu par des investisseurs et des opérateurs de premier plan </h2>
      </div>

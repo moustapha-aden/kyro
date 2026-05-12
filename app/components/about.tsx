@@ -2,7 +2,7 @@ function AboutUs() {
   return (
     <section
       id="about"
-      className="relative  px-10  text-black overflow-hidden"
+      className="relative  mx-10  text-black overflow-hidden"
     >
       {/* Subtle noise / texture feel */}
       <div className="absolute inset-0 opacity-[0.04] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px]"></div>
@@ -13,9 +13,8 @@ function AboutUs() {
         <div>
        
 
-          <h2 className="mt-6 text-6xl md:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
+          <h2 className="mt-6 text-4xl md:text-6xl lg:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
   Nous construisons
-  <br />
   <span className="font-normal">des infrastructures IT</span> performantes.
 </h2>
 
@@ -39,7 +38,7 @@ function AboutUs() {
           <div className="mt-12 w-24 h-[1px] bg-black/20"></div>
 
           {/* Inline stats (no cards) */}
-          <div className="mt-10 flex gap-14">
+          <div className="mt-10 grid grid-cols-2 md:grid-cols-1  gap-14">
             <div>
               <div className="text-4xl font-light">10+</div>
               <div className="text-xs uppercase tracking-[0.3em] text-black/50 mt-2">
