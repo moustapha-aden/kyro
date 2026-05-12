@@ -19,7 +19,7 @@ export default function Hero() {
         </video>
 
         {/* Overlay pour le contraste et le style "Premium" */}
-        <div className="absolute inset-0 bg-black/15 "></div>
+        <div className="absolute inset-0 "></div>
       </div>
 
       {/* 2. Contenu Textuel (Design Awwwards Style) */}
