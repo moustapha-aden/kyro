@@ -32,7 +32,7 @@ export default function Hero() {
   Nous concevons, déployons et gérons des infrastructures informatiques
               sur mesure pour propulser votre entreprise vers le futur.        </p>
 
-        <div className=" flex flex-wrap items-center justify-center gap-6">
+        <div className=" flex  items-center justify-center gap-6">
            <Button />
         </div>
       </div>
