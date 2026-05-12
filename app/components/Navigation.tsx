@@ -63,7 +63,7 @@ export default function Navigation() {
         ${
           scrolled
             ? "bg-white/80 backdrop-blur-2xl border-b border-black/10 py-4"
-            : "bg-black/20 backdrop-blur-md py-6"
+            : "bg-transparent  py-6"
         }
       `}
     >
@@ -80,7 +80,7 @@ export default function Navigation() {
             ${
               scrolled
                 ? "bg-black/5"
-                : "bg-blue-500/20"
+                : ""
             }
           `}
         />
@@ -115,12 +115,8 @@ export default function Navigation() {
               className={`
                 w-16 h-16 rounded-2xl
                 flex items-center justify-center
-                border transition-all duration-700
-                ${
-                  scrolled
-                    ? "bg-black text-white border-black/10"
-                    : "bg-white/10 text-white border-white/10"
-                }
+                border transition-all duration-700 bg-black  border-black/10"
+                
               `}
             >
               <img src={KyronetIcone} alt="Kyronet Icon" className="w-10 h-10"  />
