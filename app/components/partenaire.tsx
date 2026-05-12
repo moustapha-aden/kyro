@@ -20,7 +20,7 @@ function Partenaire() {
    
         {partenaires.concat(partenaires).map((item, index) => (
           <div key={index} className="md:w-24 md:h-24  w-12 h-12 shrink-0">
-          {item}
+         .   {item}
           </div>
         ))}
       </div>
