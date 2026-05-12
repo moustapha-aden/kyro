@@ -35,7 +35,7 @@ export default function Process() {
   return (
     <section
       id="process"
-      className="py-32 mx-8 rounded-[40px] bg-gradient-to-br from-black/80 via-slate-900 to-black text-white relative overflow-hidden"
+      className="py-5 md:mx-10 mx-4 rounded-[40px] bg-gradient-to-br from-black/80 via-slate-900 to-black text-white relative overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-grid-white/[0.02]"></div>

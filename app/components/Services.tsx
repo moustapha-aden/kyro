@@ -38,7 +38,7 @@ const services = [
 
 export default function ServicesBento() {
   return (
-    <section id="services" className="my-24 py-5  mx-10 rounded-3xl bg-lime-300 ">
+    <section id="services" className="my-24 py-5  md:mx-10 mx-4 rounded-3xl bg-lime-300 ">
       <div className="max-w-6xl mx-auto">
         
         {/* Header - Aligné à gauche comme les designs SaaS */}
@@ -54,13 +54,13 @@ export default function ServicesBento() {
           <span className="font-normal">Des solutions</span>
           </h2>
 
-          <p className="mt-8  text-xl max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-8  md:text-xl text-lg max-w-3xl mx-auto leading-relaxed">
             Une expertise IT complète pour opérer des infrastructures modernes et évolutives.
           </p>
         </div>
 
         {/* BENTO GRID SYSTEM */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mx-5 md:mx-0 auto-rows-[300px]">
           
           {services.map((service, index) => (
             <div

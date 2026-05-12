@@ -33,7 +33,7 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="relative my-10 py-10 px-6 bg-lime-300 mx-10 rounded-3xl text-black overflow-hidden">
+    <section id="faq" className="relative my-10 py-5 px-6 bg-lime-300 md:mx-10 mx-4 rounded-3xl text-black overflow-hidden">
 
       {/* 🌫️ AWWARDS CIRCLES BACKGROUND */}
       <div className="absolute inset-0 -z-10">
@@ -50,7 +50,7 @@ export default function FAQ() {
           FAQ
         </span>
 
-        <h2 className="mt-6 text-6xl md:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
+        <h2 className="mt-6 text-5xl md:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
           Questions
           <br />
           <span className="font-normal">fréquentes</span>

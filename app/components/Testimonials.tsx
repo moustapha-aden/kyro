@@ -23,7 +23,7 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section id="testimonials" className="relative py-32 px-6 bg-white text-black overflow-hidden">
+    <section id="testimonials" className="relative py-5 md:mx-10 mx-6 bg-white text-black overflow-hidden">
 
       {/* 🌫️ AWWARDS BACKGROUND CIRCLES */}
       <div className="absolute inset-0 -z-10">
@@ -42,7 +42,7 @@ function Testimonials() {
           Testimonials
         </span>
 
-        <h2 className="mt-6 text-6xl md:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
+        <h2 className="mt-6 text-5xl md:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
           Ce que disent
           <br />
           <span className="font-normal">nos clients</span>

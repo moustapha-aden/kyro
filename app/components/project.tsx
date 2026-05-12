@@ -46,7 +46,7 @@ function Project() {
   };
 
   return (
-    <section id="projects" className="relative py-32 bg-white text-black overflow-hidden">
+    <section id="projects" className="relative py-5 bg-white text-black overflow-hidden">
 
       {/* 🔥 HERO STYLE CIRCLES BACKGROUND */}
       <div className="absolute inset-0 -z-10">
@@ -71,7 +71,7 @@ function Project() {
           Projects
         </span>
 
-        <h2 className="mt-6 text-6xl md:text-7xl font-extralight leading-[1.05]">
+        <h2 className="mt-6 text-5xl md:text-7xl font-extralight leading-[1.05]">
           Réalisations
           <br />
           <span className="font-normal">sélectionnées</span>
@@ -120,7 +120,7 @@ function Project() {
           >
 
             {/* IMAGE */}
-            <div className="w-full lg:w-1/2 h-[500px] overflow-hidden rounded-2xl">
+            <div className="md:w-full lg:w-1/2 md:h-[500px] h-[250px] w-[250px] overflow-hidden rounded-2xl">
               <img
                 src={p.image}
                 alt={p.title}
@@ -134,16 +134,16 @@ function Project() {
             {/* TEXT */}
             <div className="w-full lg:w-1/2 space-y-6">
 
-              <div className="flex justify-between text-xs tracking-[0.3em] text-black/40">
+              <div className="flex justify-center md:gap-0 gap-7  md:justify-between text-xs tracking-[0.3em] text-black/40">
                 <span>{p.category}</span>
                 <span>{p.year}</span>
               </div>
 
-              <h3 className="text-4xl md:text-5xl font-light leading-tight">
+              <h3 className="text-2xl md:text-5xl font-light leading-tight">
                 {p.title}
               </h3>
 
-              <p className="text-black/60 text-lg leading-relaxed">
+              <p className="text-black/60 max-w-96 text-lg leading-relaxed">
                 {p.description}
               </p>
 

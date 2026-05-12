@@ -11,7 +11,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative p-12 rounded-t-[5rem] bg-black text-white overflow-hidden"
+      className="relative p-5 rounded-t-[5rem] bg-black text-white overflow-hidden"
     >
       {/* 🌫️ AWWARDS BLACK GLOW BACKGROUND */}
       <div className="absolute inset-0 -z-10">
@@ -35,7 +35,7 @@ export default function Contact() {
               Contact
             </span>
 
-            <h2 className="mt-6 text-6xl md:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
+            <h2 className="mt-6 text-5xl md:text-7xl font-extralight leading-[1.05] tracking-[-0.04em]">
               Construisons
               <br />
               <span className="font-normal">votre système</span>
