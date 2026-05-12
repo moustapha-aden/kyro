@@ -38,7 +38,7 @@ const services = [
 
 export default function ServicesBento() {
   return (
-    <section id="services" className="my-24 py-5  md:mx-10 mx-4 rounded-3xl bg-lime-300 ">
+    <section id="services" className="my-24 py-5 text-black  md:mx-10 mx-4 rounded-3xl bg-lime-300 ">
       <div className="max-w-6xl mx-auto">
         
         {/* Header - Aligné à gauche comme les designs SaaS */}
