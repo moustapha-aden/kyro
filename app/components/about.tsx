@@ -38,7 +38,7 @@ function AboutUs() {
           <div className="mt-12 w-24   h-[1px] bg-black/20"></div>
 
           {/* Inline stats (no cards) */}
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-1 gap-14">
+          <div className="mt-10 flex flex-wrap gap-14">
             <div>
               <div className="text-4xl font-light">10+</div>
               <div className="text-xs uppercase tracking-[0.3em] text-black/50 mt-2">
