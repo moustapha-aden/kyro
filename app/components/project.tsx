@@ -1,158 +1,117 @@
-import { useRef } from "react";
-import Hom from "../asset/Projet/Hom.png"
+import Hom from "../asset/Projet/Hom.png";
+import HotelPro from "../asset/Projet/HotelPro.png";
+
 
 const projects = [
   {
-    title: "Modern Network Infrastructure",
-    category: "Network",
-    year: "2025",
-    description:
-      "Architecture réseau sécurisée et scalable pour environnements multi-sites.",
-    image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000&auto=format&fit=crop",
-  },
-  {
-    title: "Cloud Virtualization System",
-    category: "Cloud",
-    year: "2025",
-    description:
-      "Infrastructure virtualisée haute disponibilité basée sur Kubernetes.",
-    image:
-      "https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=2000&auto=format&fit=crop",
-  },
-  {
-    title: "HOOM ",
+    title: "HOOM",
     category: "Development",
-    year: "2024",
+    year: "2025",
     description:
-      "Plateforme acadamique ",
-    image:
-      Hom,
+      "HOOM est une plateforme éducative innovante conçue pour accompagner les élèves et étudiants dans leurs révisions grâce à des quiz interactifs, annales, résumés de cours et une assistance IA intelligente. Avec plus de 4 000 utilisateurs actifs à Djibouti, HOOM modernise l’apprentissage et le rend plus accessible.",
+    image: Hom,
+  },
+  {
+    title: "HotelPro",
+    category: "Development",
+    year: "2026",
+    description:
+      "HotelPro est une plateforme de gestion hôtelière complète permettant de gérer réservations, chambres, facturation, restaurant et comptabilité en temps réel avec une interface moderne et intuitive.",
+    image: HotelPro,
   },
 ];
 
 function Project() {
-  const containerRef = useRef<HTMLDivElement | null>(null);
-
-  const scroll = (dir: "left" | "right") => {
-    if (!containerRef.current) return;
-
-    const width = containerRef.current.offsetWidth;
-
-    containerRef.current.scrollBy({
-      left: dir === "left" ? -width : width,
-      behavior: "smooth",
-    });
-  };
-
   return (
-    <section id="projects" className="relative py-5 bg-white text-black overflow-hidden">
-
-      {/* 🔥 HERO STYLE CIRCLES BACKGROUND */}
+    <section
+      id="projects"
+      className="relative py-32 bg-white text-black overflow-hidden"
+    >
+      {/* 🌫 HERO CIRCLES BACKGROUND */}
       <div className="absolute inset-0 -z-10">
 
-        {/* big glow center */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-black/5 blur-[180px] rounded-full"></div>
+        <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-black/5 rounded-full blur-[140px]" />
 
-        {/* top left circle */}
-        <div className="absolute top-0 left-[-100px] w-[400px] h-[400px] bg-black/5 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[600px] bg-black/5 rounded-full blur-[160px]" />
 
-        {/* bottom right circle */}
-        <div className="absolute bottom-0 right-[-120px] w-[500px] h-[500px] bg-black/5 rounded-full blur-[140px]"></div>
-
-        {/* small floating circle */}
-        <div className="absolute top-[20%] right-[20%] w-[120px] h-[120px] bg-black/10 rounded-full blur-2xl"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-black/5 rounded-full blur-[200px]" />
 
       </div>
 
       {/* HEADER */}
-      <div className="text-center max-w-4xl mx-auto mb-16 relative">
+      <div className="text-center max-w-4xl mx-auto mb-24">
         <span className="uppercase tracking-[0.35em] text-xs text-black/50">
           Projects
         </span>
 
-        <h2 className="mt-6 text-5xl md:text-7xl font-extralight leading-[1.05]">
+        <h2 className="mt-6 text-6xl md:text-7xl font-extralight leading-[1.05]">
           Réalisations
           <br />
           <span className="font-normal">sélectionnées</span>
         </h2>
       </div>
 
-      {/* BUTTONS */}
-      <div className="flex justify-center gap-4 mb-10 relative z-10">
-        <button
-          onClick={() => scroll("left")}
-          className="w-12 h-12 border border-black/10 rounded-full hover:bg-black hover:text-white transition"
-        >
-          ←
-        </button>
+      {/* PROJECT LIST */}
+      <div className="space-y-40">
 
-        <button
-          onClick={() => scroll("right")}
-          className="w-12 h-12 border border-black/10 rounded-full hover:bg-black hover:text-white transition"
-        >
-          →
-        </button>
-      </div>
+        {projects.map((p, i) => {
+          const isReversed = i % 2 === 1;
 
-      {/* SLIDER */}
-      <div
-        ref={containerRef}
-        className="
-          flex gap-10 overflow-x-hidden scroll-smooth
-          px-10
-          snap-x snap-mandatory
-          scrollbar-hide
-          relative z-10
-        "
-      >
+          return (
+            <div
+              key={i}
+              className={`
+                max-w-7xl mx-auto px-6 lg:px-10
+                flex flex-col lg:flex-row
+                items-center gap-16 lg:gap-24
+                ${isReversed ? "lg:flex-row-reverse" : ""}
+              `}
+            >
 
-        {projects.map((p, i) => (
-          <div
-            key={i}
-            className="
-              min-w-full lg:min-w-[80%]
-              snap-center
-              flex flex-col lg:flex-row
-              gap-12 items-center
-              shrink-0
-            "
-          >
+              {/* IMAGE */}
+              <div className="relative flex-1">
 
-            {/* IMAGE */}
-            <div className="md:w-full lg:w-1/2 md:h-[500px] h-[250px] w-[250px] overflow-hidden rounded-2xl">
-              <img
-                src={p.image}
-                alt={p.title}
-                className="
-                  w-full h-full object-cover
-                  hover:scale-105 transition duration-1000
-                "
-              />
-            </div>
+                <div className="absolute inset-0 -z-10 bg-black/5 blur-[120px] rounded-full scale-110" />
 
-            {/* TEXT */}
-            <div className="w-full lg:w-1/2 space-y-6">
+                <div className="overflow-hidden rounded-3xl">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="
+                      w-full h-[320px] md:h-[500px]
+                      object-cover
+                      hover:scale-105 transition duration-1000
+                    "
+                  />
+                </div>
 
-              <div className="flex justify-center md:gap-0 gap-7  md:justify-between text-xs tracking-[0.3em] text-black/40">
-                <span>{p.category}</span>
-                <span>{p.year}</span>
               </div>
 
-              <h3 className="text-2xl md:text-5xl font-light leading-tight">
-                {p.title}
-              </h3>
+              {/* TEXT */}
+              <div className="flex-1">
 
-              <p className="text-black/60 max-w-96 text-lg leading-relaxed">
-                {p.description}
-              </p>
+                <div className="flex items-center gap-6 text-xs tracking-[0.3em] text-black/40 uppercase">
+                  <span>{p.category}</span>
+                  <span className="w-8 h-[1px] bg-black/20"></span>
+                  <span>{p.year}</span>
+                </div>
 
-              <div className="w-16 h-[1px] bg-black/20"></div>
+                <h3 className="mt-6 text-4xl md:text-6xl font-light tracking-[-0.04em] leading-[1.05]">
+                  {p.title}
+                </h3>
+
+                <p className="mt-8 text-black/60 text-lg leading-relaxed max-w-xl">
+                  {p.description}
+                </p>
+
+                <div className="mt-10 w-20 h-[1px] bg-black/20"></div>
+
+              </div>
 
             </div>
+          );
+        })}
 
-          </div>
-        ))}
       </div>
     </section>
   );

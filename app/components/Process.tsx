@@ -35,12 +35,12 @@ export default function Process() {
   return (
     <section
       id="process"
-      className="py-5 md:mx-10 mx-4 rounded-[40px] bg-gradient-to-br from-black/80 via-slate-900 to-black text-white relative overflow-hidden"
+      className=" bg-black text-white relative overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
 
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[180px]"></div>
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-lime-300/10 rounded-full blur-[180px]"></div>
       <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[180px]"></div>
 
       <div className="relative max-w-7xl mx-auto px-6">
@@ -93,7 +93,7 @@ export default function Process() {
                     </span>
 
                     <div className="w-14 h-14 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl flex items-center justify-center">
-                      <step.icon className="w-6 h-6 text-cyan-400" />
+                      <step.icon className="w-6 h-6 text-lime-300" />
                     </div>
                   </div>
 
@@ -105,8 +105,8 @@ export default function Process() {
                     {step.description}
                   </p>
 
-                  <div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-cyan-300">
-                    <div className="w-10 h-px bg-cyan-400"></div>
+                  <div className="inline-flex items-center gap-3 text-sm uppercase tracking-[0.2em] text-lime-300">
+                    <div className="w-10 h-px bg-lime-300"></div>
                     {step.duration}
                   </div>
                 </div>
@@ -123,20 +123,20 @@ export default function Process() {
 
                     <div className="absolute inset-6 rounded-full border border-white/5"></div>
 
-                    <div className="absolute inset-12 rounded-full border border-cyan-400/10"></div>
+                    <div className="absolute inset-12 rounded-full border border-lime-300/10"></div>
 
                     <step.icon
                       className="w-20 h-20 text-white/80"
                       strokeWidth={1.2}
                     />
 
-                    <div className="absolute w-full h-full rounded-full border border-cyan-400/20 animate-pulse"></div>
+                    <div className="absolute w-full h-full rounded-full border border-lime-300/20 animate-pulse"></div>
                   </div>
                 </div>
 
                 {/* Center Dot */}
                 <div className="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-5 h-5 rounded-full bg-cyan-400 shadow-[0_0_40px_rgba(34,211,238,0.8)]"></div>
+                  <div className="w-5 h-5 rounded-full bg-lime-300 shadow-[0_0_40px_rgba(34,211,238,0.8)]"></div>
                 </div>
 
               </div>
