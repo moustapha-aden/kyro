@@ -35,13 +35,13 @@ export default function Process() {
   return (
     <section
       id="process"
-      className=" bg-black text-white relative overflow-hidden"
+      className=" bg-black mx-10 rounded-3xl text-white relative overflow-hidden"
     >
       {/* Background */}
       <div className="absolute inset-0 bg-grid-white/[0.02]"></div>
 
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-lime-300/10 rounded-full blur-[180px]"></div>
-      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[180px]"></div>
+      <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-lime-500/10 rounded-full blur-[180px]"></div>
 
       <div className="relative max-w-7xl mx-auto px-6">
 
@@ -136,7 +136,7 @@ export default function Process() {
 
                 {/* Center Dot */}
                 <div className="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-5 h-5 rounded-full bg-lime-300 shadow-[0_0_40px_rgba(34,211,238,0.8)]"></div>
+                  <div className="w-5 h-5 rounded-full bg-lime-300 shadow-lime-300 "></div>
                 </div>
 
               </div>

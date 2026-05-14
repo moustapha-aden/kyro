@@ -9,7 +9,6 @@ import  Project from "../components/project";
 import  ServicesStacked from "../components/Services";
 import  Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
-import Team from "~/components/team";
 export function meta() {
   return [
     { title: "Kyronet - Votre partenaire IT" },
@@ -28,7 +27,7 @@ export default function Home() {
       <ServicesStacked />
       <Project />
       <Process />
-      <Team />
+  
       <Testimonials />
       <FAQ />
       <Contact />

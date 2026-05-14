@@ -10,6 +10,7 @@ const projects = [
     description:
       "HOOM est une plateforme éducative innovante conçue pour accompagner les élèves et étudiants dans leurs révisions grâce à des quiz interactifs, annales, résumés de cours et une assistance IA intelligente. Avec plus de 4 000 utilisateurs actifs à Djibouti, HOOM modernise l’apprentissage et le rend plus accessible.",
     image: Hom,
+    lien:"https://www.hoom.space/"
   },
   {
     title: "HotelPro",
@@ -99,12 +100,35 @@ function Project() {
                 <h3 className="mt-6 text-4xl md:text-6xl font-light tracking-[-0.04em] leading-[1.05]">
                   {p.title}
                 </h3>
+              
 
                 <p className="mt-8 text-black/60 text-lg leading-relaxed max-w-xl">
                   {p.description}
                 </p>
+               {p.lien && (
+  <a
+    href={p.lien}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group relative inline-flex flex-col items-start py-5 overflow-hidden"
+  >
+    {/* Text */}
+    <span className="text-sm font-extralight leading-[1.05] tracking-[0.18em] uppercase text-black/70 transition-all duration-500 group-hover:text-black">
+      Visiter le site
+    </span>
 
-                <div className="mt-10 w-20 h-[1px] bg-black/20"></div>
+    {/* Animated underline */}
+    <div className="relative mt-3 h-[1px] w-20 overflow-hidden bg-black/10">
+      <div className="absolute inset-0 origin-left scale-x-0 bg-black transition-transform duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] group-hover:scale-x-100" />
+    </div>
+
+    {/* Subtle blur glow */}
+    <div className="absolute -bottom-2 left-0 h-10 w-24 bg-black/[0.03] blur-2xl opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
+  </a>
+)}
+
+                <div className="mt-10 w-20 h-[1px] bg-black/20 "></div>
+                                
 
               </div>
 
