@@ -9,6 +9,7 @@ import  Project from "../components/project";
 import  ServicesStacked from "../components/Services";
 import  Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
+
 export function meta() {
   return [
     { title: "Kyronet - Votre partenaire IT" },
