@@ -1,15 +1,8 @@
 function Partenaire() {
   
   const partenaires = [
-    "Cisco",
-    "Fortinet",
-    "Microsoft",
-    "Huawei",
-    "Dell",
-    "AWS",
-    "Oracle",
-    "VMware",
-  ];
+   "Oracle" , "fortinet" ,"Synax technology" ,"Tenable" ,"Kaspersky"
+  ];""
 
   return (
     <div className="px-5 text-black pt-8 pb-10">
@@ -20,7 +13,7 @@ function Partenaire() {
       <div className="flex animate-marquee space-x-10">
    
         {partenaires.concat(partenaires).map((item, index) => (
-          <div key={index} className="md:w-24 md:h-24  w-12 h-12 shrink-0">
+          <div key={index} className="md:w-35 md:h-32  w-20 h-20 shrink-0">
          {item}
           </div>
         ))}
