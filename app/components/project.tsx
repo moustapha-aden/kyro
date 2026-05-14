@@ -114,7 +114,7 @@ function Project() {
   >
     {/* Text */}
     <span className="text-sm font-extralight leading-[1.05] tracking-[0.18em] uppercase text-black/70 transition-all duration-500 group-hover:text-black">
-      Visiter le site
+     Voir le projet
     </span>
 
     {/* Animated underline */}
