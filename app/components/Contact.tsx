@@ -55,7 +55,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Téléphone</p>
-                  <p className="text-white/60">+33 1 84 88 33 10</p>
+                  <p className="text-white/60">+253 77 30 94 07</p>
                 </div>
               </div>
 
@@ -65,7 +65,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-white/60">contact@kyronet.fr</p>
+                  <p className="text-white/60">sales@kyronet.net / support@kyronet.net</p>
                 </div>
               </div>
 
@@ -75,7 +75,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Adresse</p>
-                  <p className="text-white/60">Paris, France</p>
+                  <p className="text-white/60">Djibouti-ville, Q6 , CLE</p>
                 </div>
               </div>
 
